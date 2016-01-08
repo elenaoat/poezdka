@@ -1,0 +1,22 @@
+{% extends "trips/base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+	<div class="site-header">
+
+	</div>
+	<div class="container">
+<!-- 	style="background: url('{% static 'trips/images/banner.png' %}') no-repeat; background-size:contain; background-position: center;"
+ -->
+		<div class="row">
+				<h2 class="text-center">{{ post.title }}</h2>
+				<h4>{{ post.pub_date.date }}</h4>
+				<div class="col-md-12">
+					<img src="{{ post.image.url }}" width="100%" height="400px" />
+				</div>
+				<div class="col-md-12">
+					<p>{{ post.text }}</p>
+				</div>
+		</div>
+	</div>
+{% endblock body %}

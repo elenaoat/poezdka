@@ -1,0 +1,44 @@
+h3, h2, body {
+	font-family:  'Lato', sans-serif !important;
+}
+
+body {
+	/*padding-top: 70px;*/
+}
+
+.header-title {
+	font-size: 21px;
+	margin: 10px;
+	text-transform: uppercase;
+}
+
+.general-header {
+	font-size: 20px;
+	text-transform: uppercase;
+	/*font-weight: 700;*/
+	margin: 0 auto 30px auto;
+	display: block;
+}
+#div-bg-img {
+	background: url('images/blogposts.png');
+}
+.nav-fonttype {
+	letter-spacing: 1.5px;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.site-header {
+	min-height: 500px;
+	background: url('http://lorempixel.com/1500/1500/');
+	background-size: 100% auto;
+}
+
+.navbar-collapse {
+	text-align: center;
+}
+
+.navbar-nav {
+	display: inline-block;
+	float: none;
+}

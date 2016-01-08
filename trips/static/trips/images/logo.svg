@@ -1,0 +1,60 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 198">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #3a1c32;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #3b1c32;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #231f20;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #fecf9c;
+      }
+
+      .cls-6 {
+        fill: #a3d3b3;
+      }
+
+      .cls-7 {
+        fill: #b96d40;
+      }
+    </style>
+  </defs>
+  <title>logo</title>
+  <ellipse class="cls-1" cx="24" cy="185.5" rx="7.5" ry="12.5"/>
+  <ellipse class="cls-1" cx="104" cy="185.5" rx="7.5" ry="12.5"/>
+  <path class="cls-1" d="M166.5,86.5h-68v-48h68v48Zm-65-3h62v-42h-62v42Z" transform="translate(-68.5 -37)"/>
+  <line class="cls-2" x1="21.5" y1="3" x2="106.5" y2="3"/>
+  <rect class="cls-3" x="1.5" y="38" width="125" height="155" rx="10" ry="10"/>
+  <rect class="cls-4" x="1.5" y="38" width="125" height="155" rx="10" ry="10"/>
+  <rect class="cls-5" x="15.65" y="51.69" width="25.85" height="21.31"/>
+  <rect class="cls-6" x="51.77" y="51.41" width="25.85" height="21.31"/>
+  <rect class="cls-5" x="86.5" y="51.69" width="25.85" height="21.31"/>
+  <rect class="cls-7" x="16.5" y="86.69" width="25.85" height="21.31"/>
+  <rect class="cls-5" x="52.08" y="87.04" width="25.85" height="21.31"/>
+  <rect class="cls-7" x="85.65" y="86.69" width="25.85" height="21.31"/>
+  <rect class="cls-5" x="15.65" y="121.69" width="25.85" height="21.31"/>
+  <rect class="cls-6" x="51.5" y="121.69" width="25.85" height="21.31"/>
+  <rect class="cls-5" x="85.65" y="121.69" width="25.85" height="21.31"/>
+</svg>
