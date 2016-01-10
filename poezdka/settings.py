@@ -86,7 +86,7 @@ DATABASES = {
     }
 }
 
-MEDIA_ROOT = '/Users/elenaoat/trips_media'
+MEDIA_ROOT = os.environ['MEDIA_ROOT']
 MEDIA_URL = '/media/'
 
 # Password validation

@@ -29,8 +29,8 @@ body {
 }
 
 .site-header {
-	min-height: 500px;
-	background: url('http://lorempixel.com/1500/1500/');
+	min-height: 600px;
+	background: url('');
 	background-size: 100% auto;
 }
 
