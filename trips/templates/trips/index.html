@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block body %}
-	<div class="site-header" style="background: url('{% static "trips/images/surfer.jpg" %}');">
+	<div class="site-header" style="background: url('{% static "trips/images/sea.jpg" %}');">
 
 	</div>
 	<div class="container">
@@ -14,7 +14,7 @@
 			<article class="col-md-4">
 				<header>
 					<img src="{{ post.image.url }}" width="320" height="280" />
-					<h2 class="header-title">{{ post.title }}</h2>
+					<h2 class="header-title"><a href="{% url 'trips:post' post.slug %} ">{{ post.title }}</a></h2>
 				</header>
 				<div class="entry-content">
 					<p>{{ post.teaser }}</p>

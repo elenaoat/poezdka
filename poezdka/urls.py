@@ -27,7 +27,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^', include('trips.urls')),
+    url(r'^', include('trips.urls', namespace='trips')),
     url(r'^admin/', admin.site.urls),
     # ... the rest of your URLconf goes here ...
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
