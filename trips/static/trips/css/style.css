@@ -47,6 +47,12 @@ body {
 	background-size: 100% auto;
 }
 
+.post-header {
+	min-height: 400px;
+	background: url('');
+	background-size: 100% auto;
+}
+
 .navbar-collapse {
 	text-align: center;
 }

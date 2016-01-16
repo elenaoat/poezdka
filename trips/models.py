@@ -10,6 +10,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, default="")
     pub_date = models.DateTimeField('Publishing date', default=timezone.now)
     image = models.ImageField()
+    image_post = models.ImageField()
     teaser = models.TextField()
     text = models.TextField()
     slug = models.SlugField()
