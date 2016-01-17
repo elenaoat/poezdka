@@ -3,6 +3,7 @@
 
 {% block body %}
 	<div class="site-header" style="background: url('{% static "trips/images/sea.jpg" %}');">
+		<img src="{% static 'trips/images/tagline.png' %}" style="display:block; margin: 0 auto 0 auto; height: auto; margin-top: 86px;" width="250"/>
 	</div>
 	<div class="container">
 <!-- 	style="background: url('{% static 'trips/images/banner.png' %}') no-repeat; background-size:contain; background-position: center;"
@@ -11,11 +12,11 @@
 		<div class="row">
 		{% for post in posts %}
 			<article class="col-md-4">
-				<header>
+				<header class="text-center">
 					<img src="{{ post.image.url }}" width="320" height="320" />
 					<h2 class="header-title"><a class="" href="{% url 'trips:post' post.slug %} ">{{ post.title }}</a></h2>
 				</header>
-				<div class="entry-content">
+				<div class="entry-content text-justify">
 					<p>{{ post.teaser }}</p>
 				</div>
 			</article>

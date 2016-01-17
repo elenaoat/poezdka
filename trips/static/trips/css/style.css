@@ -1,16 +1,46 @@
-h3, h2, body {
+h3, h2, h1 {
 	font-family:  'Fjalla One', sans-serif;
 	text-align: center;
+	color: #000;
+	font-weight: 500;
+	margin: 0 0 10px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	display: block;
 }
 
 body {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.625;
 	/*padding-top: 70px;*/
+}
+
+.post-container p {
+	margin-bottom: 26px;
+
+}
+
+.post-title {
+	text-transform: uppercase;
 }
 
 .header-title {
 	font-size: 21px;
 	margin: 10px;
 	text-transform: uppercase;
+}
+
+.post-image {
+	width: auto;
+	max-height: 400px;
+	margin-bottom: 15px;
 }
 
 .header-title a {
@@ -23,6 +53,9 @@ body {
 .header-title a:hover {
 	color: #2da1c4;
 	font-weight: 500;
+}
+
+.entry-content {
 }
 
 .general-header {
@@ -43,6 +76,11 @@ body {
 
 .site-header {
 	min-height: 600px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0;
+	background-size: cover;
+	background: transparent;
 	background: url('');
 	background-size: 100% auto;
 }
