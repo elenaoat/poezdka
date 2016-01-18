@@ -8,12 +8,12 @@
 	<div class="container">
 <!-- 	style="background: url('{% static 'trips/images/banner.png' %}') no-repeat; background-size:contain; background-position: center;"
  -->
- 		<h3 class="text-center general-header" style="margin-top: 20px;">последние посты</h3>
+ 		<h3 class="text-center row" style="margin-top: 15px;">ПОСЛЕДНИЕ ПОСТЫ</h3>
 		<div class="row">
 		{% for post in posts %}
 			<article class="col-md-4">
 				<header class="text-center">
-					<img src="{{ post.image.url }}" width="320" height="320" />
+					<img class="responsive" src="{{ post.image.url }}" />
 					<h2 class="header-title"><a class="" href="{% url 'trips:post' post.slug %} ">{{ post.title }}</a></h2>
 				</header>
 				<div class="entry-content text-justify">
