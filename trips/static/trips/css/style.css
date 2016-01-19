@@ -29,6 +29,7 @@ body {
 
 .post-title {
 	text-transform: uppercase;
+	margin-top: 15px;
 }
 
 .header-title {
@@ -89,10 +90,6 @@ body {
 	min-height: 400px;
 	background: url('');
 	background-size: 100% auto;
-}
-
-.navbar-collapse {
-	text-align: center;
 }
 
 .navbar-nav {
