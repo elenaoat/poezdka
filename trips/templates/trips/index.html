@@ -1,10 +1,14 @@
 {% extends "trips/base.html" %}
 {% load staticfiles %}
 
+{% block title %}
+	<title>Путешествуйте умнее, больше, с удовольствием!</title>
+{% endblock title %}
+
 {% block body %}
 	<div class="site-header" style="background: url('{% static "trips/images/sea.jpg" %}');">
 		<div class="row">
-			<img src="{% static 'trips/images/tagline.png' %}" style="margin-top: 120px;" class="img-responsive col-md-4 col-md-offset-4" />
+			<img src="{% static 'trips/images/tagline.png' %}" style="margin-top: 120px;" alt="Путешествуйте умнее. Больше. С удовольствием." class="img-responsive col-md-4 col-md-offset-4" />
 		</div>
 		<!-- style="display:block; margin: 0 auto 0 auto; height: auto; margin-top: 86px;" -->
 	</div>
@@ -16,7 +20,7 @@
 		{% for post in posts %}
 			<article class="col-md-4">
 				<header class="text-center">
-					<img class="responsive" src="{{ post.image.url }}" />
+					<img class="responsive" alt="{{ post.image_description }}" src="{{ post.image.url }}" />
 					<h2 class="header-title"><a class="" href="{% url 'trips:post' post.slug %} ">{{ post.title }}</a></h2>
 				</header>
 				<div class="entry-content text-justify">
