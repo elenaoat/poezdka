@@ -16,6 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.sitemaps.views import sitemap
+from sitemap import PostSitemap
+
+sitemaps = {'blog': PostSitemap}
 
 # urlpatterns = [
 #     url(r'^', include('trips.urls')),
@@ -27,6 +31,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},
+        name='django.contrib.sitemaps.views.sitemap'),
     url(r'^', include('trips.urls', namespace='trips')),
     url(r'^admin/', admin.site.urls),
     # ... the rest of your URLconf goes here ...
