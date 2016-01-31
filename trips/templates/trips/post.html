@@ -22,13 +22,13 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-			<h3>RECENT POSTS</h3>
+			<h3>ПОСЛЕДНИЕ ПОСТЫ</h3>
 			<ul class="list-unstyled">
 				{% for post in latest %}
 				<li><a href="{% url 'trips:view_post' post.slug %}">{{post.title}}</a></li>
 				{% endfor %}
 			</ul>
-			<h3>OTHER POSTS</h3>
+			<h3>ДРУГИЕ ПОСТЫ</h3>
 			<ul class="list-unstyled">
 				{% for post in other %}
 				<li><a href="{% url 'trips:view_post' post.slug %}">{{post.title}}</a></li>
