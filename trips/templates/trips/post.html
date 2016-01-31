@@ -13,13 +13,27 @@
 <!-- 	style="background: url('{% static 'trips/images/banner.png' %}') no-repeat; background-size:contain; background-position: center;"
  -->
 		<div class="row">
-			<div class="col-md-8 text-center col-md-offset-2 post-container">
+			<div class="col-md-8 text-center post-container">
 				<h2 class="post-title">{{ post.title }}</h2>
 				<h4>{{ post.pub_date.date }}</h4>
 				<img alt="{{ post.image_description }}" src="{{ post.image_post.url }}" class="img-responsive" />
 				<div class="text-justify">
 					<p>{{ post.text|safe }}</p>
 				</div>
+			</div>
+			<div class="col-md-4">
+			<h3>RECENT POSTS</h3>
+			<ul class="list-unstyled">
+				{% for post in latest %}
+				<li><a href="{% url 'trips:view_post' post.slug %}">{{post.title}}</a></li>
+				{% endfor %}
+			</ul>
+			<h3>OTHER POSTS</h3>
+			<ul class="list-unstyled">
+				{% for post in other %}
+				<li><a href="{% url 'trips:view_post' post.slug %}">{{post.title}}</a></li>
+				{% endfor %}
+				<li></li>
 			</div>
 		</div>
 	</div>

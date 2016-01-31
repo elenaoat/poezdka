@@ -18,7 +18,9 @@ def post(request, slug):
 	except models.Post.DoesNotExist:
 		raise Http404('Such post does not exist.')
 	template = 'trips/post.html'
-	ctx = {'post': p}
+	latest = models.Post.objects.all().order_by('-pub_date')
+
+	ctx = {'post': p, 'latest': latest[:3], 'other': latest[3:]}
 	return render(request, template, ctx)
 
 def about(request):
