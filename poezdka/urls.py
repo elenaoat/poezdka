@@ -32,7 +32,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},
         name='django.contrib.sitemaps.views.sitemap'),
-    url(r'^', include('trips.urls', namespace='trips')),
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('trips.urls', namespace='trips')),
     # ... the rest of your URLconf goes here ...
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
