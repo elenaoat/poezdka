@@ -21,7 +21,7 @@
 			<article class="col-md-4">
 				<header class="text-center">
 					<img class="responsive" alt="{{ post.image_description }}" src="{{ post.image.url }}" />
-					<h2 class="header-title"><a class="" href="{% url 'trips:view_post' post.slug %} ">{{ post.title }}</a></h2>
+					<h2 class="header-title" style="min-height: 40px;"><a class="" href="{% url 'trips:view_post' post.slug %} ">{{ post.title }}</a></h2>
 				</header>
 				<div class="entry-content text-justify">
 					<p>{{ post.teaser }}</p>

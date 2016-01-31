@@ -18,7 +18,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from sitemap import PostSitemap
-
 sitemaps = {'blog': PostSitemap}
 
 # urlpatterns = [

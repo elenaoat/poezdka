@@ -20,3 +20,8 @@ def post(request, slug):
 	template = 'trips/post.html'
 	ctx = {'post': p}
 	return render(request, template, ctx)
+
+def about(request):
+	ctx = {}
+	template = 'trips/about.html'
+	return render(request, template, ctx)
