@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-			<h3>ПОСЛЕДНИЕ ПОСТЫ</h3>
+			<h3 style="margin-top: 80px;">ПОСЛЕДНИЕ ПОСТЫ</h3>
 			<ul class="list-unstyled">
 				{% for post in latest %}
 				<li><a href="{% url 'trips:view_post' post.slug %}">{{post.title}}</a></li>
