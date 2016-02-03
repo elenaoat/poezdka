@@ -17,6 +17,9 @@
 				<h2 class="post-title">{{ post.title }}</h2>
 				<h4>{{ post.pub_date.date }}</h4>
 				<img alt="{{ post.image_description }}" src="{{ post.image_post.url }}" class="img-responsive" />
+				<div class="caption">
+					<h5>{{ post.image_caption }}</h5>
+				</div>
 				<div class="text-justify">
 					<p>{{ post.text|safe }}</p>
 				</div>
