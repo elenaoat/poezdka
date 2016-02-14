@@ -10,6 +10,10 @@ h2, h1 {
 	box-sizing: border-box;
 }
 
+a.dotted {
+	border-bottom: 1px dotted;
+}
+
 a {
 	color: #111;
 }
